@@ -1,0 +1,479 @@
+body .container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background: #fff url('images/bg-sphere.webp') no-repeat;
+  animation: bg 20s linear both infinite; */
+  background: rgb(205, 205, 205);
+  background: linear-gradient(180deg, rgba(205, 205, 205, 1) 29%, rgba(255, 255, 255, 1) 100%);
+}
+
+body .row {
+  --bs-gutter-x: 0;
+}
+
+.logo img {
+  width: 75%;
+}
+
+.header {
+  padding: 20px 10px;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  background: #fff;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  animation: fadein 0.5s both linear;
+  padding: 0 10px;
+  border-bottom: 1px solid rgb(155, 155, 155);
+}
+
+.menu {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.menu * {
+  box-sizing: border-box;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+.menu a {
+  color: rgba(50, 102, 71, 0.5);
+  position: relative;
+  display: inline-block;
+  letter-spacing: 3px;
+  margin: 0;
+  text-decoration: none;
+  transition: all 0.35s ease;
+}
+
+.menu a:before,
+.menu a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.menu a:before {
+  bottom: 100%;
+  display: block;
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: #e67e22;
+}
+
+.menu a:after {
+  padding: 0.3em 0;
+  position: absolute;
+  bottom: 75%;
+  left: 0;
+  content: attr(data-hover);
+  color: rgba(50, 102, 71, 1);
+  white-space: nowrap;
+}
+
+.menu li:hover a {
+  transform: translateY(100%);
+}
+
+body .btn a {
+  color: #326647;
+  padding: 10px 60px 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 0;
+}
+
+body .btn {
+  /*background: rgba(160, 160, 160, 1) url(/images/btn-arrow.webp) no-repeat 85% 50%;
+    padding: 10px 60px 10px 20px;*/
+  font-size: 20px;
+  font-weight: bolder;
+  transition: background-position 1s, transform 1s 1s;
+  position: relative;
+  transition: color 0.75s linear;
+  border: none;
+}
+
+body .btn:focus {
+  box-shadow: none;
+}
+
+/*body .btn:hover{
+    background-position: 95% 50%;
+}*/
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 97%;
+  background: url('images/btn-arrow.webp') 50% 50% no-repeat;
+  transition: left 0.5s, transform 0.5s 0.25s linear, background 0.75s linear;
+  background-size: contain;
+}
+
+.btn:hover::after {
+  left: 100%;
+  transform: rotate(360deg);
+}
+
+.btn:hover {
+  color: #2e8b57;
+}
+
+.phone .btn:after {
+  background: url('images/email-icon.webp') 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.phone .btn:hover::after {
+  background: url('images/email-icon-hover.webp') 50% 50% no-repeat;
+  background-size: contain;
+}
+
+
+.image img {
+  width: 100%;
+}
+
+.image {
+  overflow: hidden;
+}
+
+#about-me {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  padding: 50px;
+}
+
+#about-me img {
+  -webkit-animation: scale 20s infinite both linear;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: scale 20s infinite both linear;
+  /* Firefox < 16 */
+  -ms-animation: scale 20s infinite both linear;
+  /* Internet Explorer */
+  -o-animation: scale 20s infinite both linear;
+  /* Opera < 12.1 */
+  animation: scale 20s infinite both linear;
+}
+
+.box img {
+  max-width: 100%;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.experience .box:hover {
+  box-shadow: #2e8b57;
+}
+
+.boxes .box {
+  padding: 50px;
+  text-align: center;
+}
+
+.section {
+  padding: 10px 0;
+}
+
+.section-title {
+  padding: 30px;
+}
+
+.tech-stars .box p {
+  font-size: 30px;
+  filter: drop-shadow(1px 1px 1px black);
+}
+
+.star {
+  background: url('images/star.webp') 0 0 no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  transition: 3s;
+}
+
+.tech-stars .active-star {
+  background: url('images/star-active.webp') 0 0 no-repeat;
+  background-size: contain;
+}
+
+.technologies {
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-bg>div {
+  position: absolute;
+  font-weight: bolder;
+  opacity: 30%;
+  color: #326647;
+  /* animation: rotateperspective 3s infinite ease-in-out; */
+}
+
+.tech-bg .css-bg {
+  animation: rotateperspective 3s infinite ease-in-out, bg-tech 10s infinite linear both;
+}
+
+.tech-bg .html-bg {
+  animation: rotateperspective 3s 2s infinite ease-in-out, bg-tech 15s infinite reverse linear both;
+}
+
+.tech-bg .js-bg {
+  animation: rotateperspective 3s 2s infinite ease-in-out, bg-tech 10s infinite alternate linear both;
+}
+
+body .toggle-btn {
+  border: 2px rgba(50, 102, 71, 1) solid;
+  border-radius: 20px;
+  font-size: 13px;
+  background: #fff;
+  transition: background 0.4s linear, color 0.3s 0.4s linear;
+}
+
+body .toggle-btn:hover {
+  border: 2px rgba(50, 102, 71, 1) solid;
+  background: rgba(50, 102, 71, 1);
+  color: #fff;
+}
+
+.toggle-btn::after {
+  content: none;
+}
+
+.technologies .toggle-btn {
+  position: absolute;
+  left: 90%;
+  top: 15%;
+}
+
+.dissapear-object {
+  display: none;
+}
+
+.experience .box:hover img {
+  animation: bounce 1s ease;
+}
+
+/* styl paralaksy */
+
+.parallax {
+  height: 400px;
+  position: relative;
+  background: #fff url('images/parallax-01.webp') 0 0 no-repeat fixed;
+  background-size: cover;
+}
+
+.parallax-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.parallax::after {
+  content: '';
+  height: 400px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+}
+
+.parallax-description {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.projects-items {
+  display: grid;
+  grid-template-columns: repeat(4, 40vw);
+  /* grid-template-rows: 1fr; */
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  overflow-x: scroll;
+  height: 500px;
+  /* scroll-snap-type: both mandatory;
+  scroll-padding: 30px; */
+}
+
+.projects-item .active {
+  scroll-snap-type: unset;
+}
+
+.projects-items .item {
+  scroll-snap-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 0;
+  background: #326647;
+  position: relative;
+  overflow: hidden;
+}
+
+.expand-header {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  left: 0;
+  padding: 15px 30px;
+  transition: bottom 0.5s linear;
+}
+
+.expand-header::after {
+  content: '';
+  width: 50%;
+  height: 5px;
+  background: rgba(50, 102, 71, 1);
+  position: absolute;
+  border-radius: 50%;
+}
+
+.expand-header h3 {
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
+
+.expand-desc {
+  position: absolute;
+  bottom: -60%;
+  width: 100%;
+  left: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: 0.5s linear;
+}
+
+.projects-items .item .text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.5s linear;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.projects-items .item:hover .text {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.projects-items .item:hover .expand-header {
+  bottom: 75%;
+}
+
+.projects-items .item:hover .expand-desc {
+  bottom: 60%;
+}
+
+.projects-items .item .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.projects-items .item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ustawienia paska scrolla */
+
+::-webkit-scrollbar {
+  height: 7px;
+  border-radius: 30px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.form {
+  padding: 40px 30px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 15px 0;
+  background: rgba(50, 102, 71, 1);
+  color: #fff;
+}
+
+.form .cell {
+  padding: 15px 10px;
+}
+
+.form .form-label {
+  padding: 5px 0;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.form .form-control:focus {
+  border-color: #326647;
+  box-shadow: 0 0 0 1px rgb(50 102 71 / 75%);
+}
+
+.form .form-control {
+  transition: 0.5s;
+}
+
+.go-to-top{
+  display: none;
+  position: fixed;
+  top: 92%;
+  left: 92%;
+  background:rgba(50, 102, 71, 1);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.go-to-top:hover{
+  background: #fff;
+  color: rgba(50, 102, 71, 1);
+}
+
+.go-to-top p{
+  padding: 15px;
+}
+
+.visible{
+  display: block;
+  animation: goTT 0.5s linear both;
+}
