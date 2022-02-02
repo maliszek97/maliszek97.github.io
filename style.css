@@ -385,8 +385,12 @@ body .toggle-btn:hover {
 }
 
 .projects-items .item:hover .expand-desc {
-  bottom: 60%;
+  bottom: 35%;
 }
+
+.projects-items .item .btn{
+  margin-top: 15px;
+}  
 
 .projects-items .item .image {
   position: absolute;
