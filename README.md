@@ -25,7 +25,7 @@ The page was adjusted according to RWD standards. Moreover, the basic rules of S
 
 ## What next?
 
-I will definitely focus on improving the visual aspects of the site in the future. New projects will certainly be added as well. In addition, I would like to take care of extended aspects of site optimization, such as minification of CSS and Javascript files, lazy loading, use of browser cache. I also plan to add 3D models.
+I will definitely focus on improving the visual aspects of the site in the future. New projects will certainly be added as well. In addition, I would like to take care of extended aspects of site optimization, such as minification of CSS and Javascript files, lazy loading, use of browser cache. I also plan to add 3D models. I will also consider doing an English version of the site (on the same domain).
 
 ## What have I learned in this project?
 
