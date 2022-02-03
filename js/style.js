@@ -25,8 +25,8 @@ $(window).scroll(function () {
     let $documentTop = $(window).scrollTop();
 
     if ($documentTop >= $topHeight) $header.addClass('sticky');
-    if ($('body').hasClass('.body-sm')) $header.removeClass('sticky');
-    if ($('body').hasClass('.body-xs')) $header.removeClass('sticky');
+    else if ($('body').hasClass('.body-sm')) $header.removeClass('sticky');
+    else if ($('body').hasClass('.body-xs')) $header.removeClass('sticky');
     else $header.removeClass('sticky');
 });
 
