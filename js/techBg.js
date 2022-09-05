@@ -29,11 +29,11 @@ function techBg() {
 
 function toggleBg() {
     sectionBg.classList.toggle('dissapear-object');
-    if (toggleBtn.textContent == 'Ukryj tło'){
-        toggleBtn.textContent = "Pokaż tło";
+    if (toggleBtn.textContent == 'Hide background'){
+        toggleBtn.textContent = "Show background";
     }
     else {
-        toggleBtn.textContent = "Ukryj tło";
+        toggleBtn.textContent = "Hide background";
     }
 }
 
