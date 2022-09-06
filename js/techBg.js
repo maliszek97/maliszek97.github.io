@@ -29,10 +29,9 @@ function techBg() {
 
 function toggleBg() {
     sectionBg.classList.toggle('dissapear-object');
-    if (toggleBtn.textContent == 'Hide background'){
+    if (toggleBtn.textContent == 'Hide background') {
         toggleBtn.textContent = "Show background";
-    }
-    else {
+    } else {
         toggleBtn.textContent = "Hide background";
     }
 }

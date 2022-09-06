@@ -1,136 +1,141 @@
-.body-lg .menu li{
+.body-lg .menu li {
     padding: 0 20px;
 }
 
-.body-lg #about-me .text{
+.body-lg #about-me .text {
     padding: 30px;
 }
 
-.body-lg .parallax-description{
+.body-lg .parallax-description {
     font-size: 35px;
 }
 
-.body-md .menu li{
+.body-md .menu li {
     padding: 0 5px;
 }
 
-.body-md #about-me .text{
+.body-md #about-me .text {
     padding: 25px;
 }
 
-.body-md h1{
+.body-md h1 {
     font-size: 40px;
 }
 
-.body-md h2{
+.body-md h2 {
     font-size: 35px;
 }
 
-.body-md .parallax-description{
+.body-md .parallax-description {
     font-size: 30px;
 }
 
-.body-md .go-to-top p{
+.body-md .go-to-top p {
     font-size: 14px;
 }
 
-.body-sm .logo img{
+.body-sm .logo img {
     width: 50%;
 }
 
-.body-sm .phone{
+.body-sm .phone {
     margin-top: 15px;
 }
 
-.body-sm .carousel-caption .slider-header{
+.body-sm .carousel-caption .slider-header {
     font-size: 25px;
     margin-bottom: 5px;
 }
 
-.body-sm .carousel-caption .btn{
+.body-sm .carousel-caption .btn {
     margin-top: 0px;
 }
 
-.body-sm .carousel-control-next, .body-sm .carousel-control-prev{
+.body-sm .carousel-control-next,
+.body-sm .carousel-control-prev {
     width: 5%;
 }
 
-.body-sm #about-me{
+.body-sm #about-me {
     display: block;
 }
 
-.body-sm .technologies .toggle-btn{
+.body-sm .technologies .toggle-btn {
     left: 87%;
     top: 7%;
 }
 
-.body-sm .projects-items .item .expand-header{
+.body-sm .projects-items .item .expand-header {
     bottom: 75%;
 }
 
-.body-sm .projects-items .item .expand-desc{
+.body-sm .projects-items .item .expand-desc {
     bottom: 20%;
 }
 
-.body-sm .projects-items .item .text{
+.body-sm .projects-items .item .text {
     background: rgba(255, 255, 255, 0.85);
 }
 
-.body-sm .go-to-top p{
+.body-sm .go-to-top p {
     padding: 10px;
     font-size: 12px;
 }
 
-.body-xs .slide{
+.body-xs .slide {
     display: none;
 }
 
-.body-xs #about-me{
+.body-xs #about-me {
     display: block;
 }
 
-.body-xs h1{
+.body-xs h1 {
     font-size: 35px;
 }
 
-.body-xs h2{
+.body-xs h2 {
     font-size: 30px;
 }
 
-.body-xs h3{
+.body-xs h3 {
     font-size: 25px;
 }
 
-.body-xs .boxes .box{
+.body-xs .boxes .box {
     padding: 20px 30px;
 }
 
-.body-xs .technologies .toggle-btn{
+.body-xs .technologies .toggle-btn {
     top: 15%;
     left: 70%;
 }
 
-.body-xs .parallax-description{
+.body-xs .parallax-description {
     font-size: 25px;
 }
 
-.body-xs .projects-items{
+.body-xs .projects-items {
     grid-template-columns: repeat(4, 75vw);
 }
 
-.body-xs .projects-items .item .expand-header{
+.body-xs .projects-items .item .expand-header {
     bottom: 75%;
 }
 
-.body-xs .projects-items .item .expand-desc{
+.body-xs .projects-items .item .expand-desc {
     bottom: 8%;
 }
 
-.body-xs .projects-items .item .text{
+.body-xs .projects-items .item .text {
     background: rgba(255, 255, 255, 0.85);
 }
 
-.body-xs .go-to-top p{
-    padding: 5px;
-    font-size: 12px;
+.body-xs #go-to-top {
+    right: 5px;
+}
+
+.body-xs .sticky,
+.body-sm .sticky {
+    position: relative;
 }

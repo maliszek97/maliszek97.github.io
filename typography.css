@@ -1,22 +1,33 @@
-p{
+p {
     font-size: 18px;
     line-height: 1.3;
     color: #000;
 }
-h1{
+
+h1 {
     font-size: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
     color: #000;
 }
-h2{
+
+h2 {
     font-size: 40px;
     padding-bottom: 20px;
     padding-top: 20px;
     color: #000;
 }
-h3{
+
+h3 {
     font-size: 30px;
     padding-bottom: 20px;
     color: #000;
+}
+
+strong {
+    font-weight: bold;
+}
+
+#about-me p {
+    text-align: justify;
 }

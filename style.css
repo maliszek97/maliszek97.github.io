@@ -6,8 +6,11 @@ body .container-fluid {
   min-height: 100vh;
   /* background: #fff url('images/bg-sphere.webp') no-repeat;
   animation: bg 20s linear both infinite; */
-  background: rgb(205, 205, 205);
-  background: linear-gradient(180deg, rgba(205, 205, 205, 1) 29%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(-45deg, #ee7752, #b94a4a, #23a6d5, #23d5ab, #27a109);
+  background-size: 400% 400%;
+  animation: bgGradient 15s ease infinite;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 
 body .row {
@@ -388,9 +391,9 @@ body .toggle-btn:hover {
   bottom: 35%;
 }
 
-.projects-items .item .btn{
+.projects-items .item .btn {
   margin-top: 15px;
-}  
+}
 
 .projects-items .item .image {
   position: absolute;
@@ -456,28 +459,24 @@ body .toggle-btn:hover {
   transition: 0.5s;
 }
 
-.go-to-top{
-  display: none;
-  position: fixed;
-  top: 92%;
-  left: 92%;
-  background:rgba(50, 102, 71, 1);
-  color: white;
-  cursor: pointer;
-  transition: 0.5s;
-  border-radius: 10px;
+.visible {
+  display: block;
+  animation: goTT 0.5s linear both;
 }
 
-.go-to-top:hover{
-  background: #fff;
+#go-to-top {
+  position: fixed;
+  bottom: 3px;
+  right: 20px;
+  display: none;
+  background: #808000;
+  border-radius: 50%;
+}
+
+#go-to-top:hover {
   color: rgba(50, 102, 71, 1);
 }
 
-.go-to-top p{
-  padding: 15px;
-}
-
-.visible{
-  display: block;
-  animation: goTT 0.5s linear both;
+#go-to-top::after {
+  content: none;
 }
