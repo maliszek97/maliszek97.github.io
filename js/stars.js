@@ -1,6 +1,6 @@
 const techSelenium = document.querySelectorAll('.technologies .tech-stars #selenium .star');
 const techJava = document.querySelectorAll('.technologies .tech-stars #java .star');
-const techJmeter = document.querySelectorAll('.technologies .tech-stars #java .star');
+const techJmeter = document.querySelectorAll('.technologies .tech-stars #jmeter .star');
 const techPostman = document.querySelectorAll('.technologies .tech-stars #postman .star');
 const techCss = document.querySelectorAll('.technologies .tech-stars #css .star');
 const techHtml = document.querySelectorAll('.technologies .tech-stars #html .star');
