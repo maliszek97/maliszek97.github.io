@@ -32,27 +32,6 @@ $(window).scroll(async function () {
     let $bottomHeight = $('.header').height() + $('.carousel-inner').height() + $('#about-me').height() + $('.experience').height() + 300;
     let $docTop = $(window).scrollTop();
     if ($topHeight < $docTop && $docTop < $bottomHeight) {
-        for (var i = 0; i < cssNum; i++) {
-            techCss[i].classList.add('active-star');
-            await sleep(300);
-        }
-
-        for (var i = 0; i < htmlNum; i++) {
-            techHtml[i].classList.add('active-star');
-            await sleep(300);
-        }
-
-        for (var i = 0; i < jsNum; i++) {
-            techJs[i].classList.add('active-star');
-            await sleep(300);
-
-        }
-
-        for (var i = 0; i < bootstrapNum; i++) {
-            techBootstrap[i].classList.add('active-star');
-            await sleep(300);
-
-        }
 
         for (var i = 0; i < seleniumNum; i++) {
             techSelenium[i].classList.add('active-star');
@@ -72,10 +51,34 @@ $(window).scroll(async function () {
 
         }
 
-        for (var i = 0; i < gimpNum; i++) {
-            techGit[i].classList.add('active-star');
+        for (var i = 0; i < postmanNum; i++) {
+            techPostman[i].classList.add('active-star');
             await sleep(300);
         }
+
+        for (var i = 0; i < cssNum; i++) {
+            techCss[i].classList.add('active-star');
+            await sleep(300);
+        }
+
+        for (var i = 0; i < htmlNum; i++) {
+            techHtml[i].classList.add('active-star');
+            await sleep(300);
+        }
+
+        for (var i = 0; i < jsNum; i++) {
+            techJs[i].classList.add('active-star');
+            await sleep(300);
+
+        }
+
+        for (var i = 0; i < gitNum; i++) {
+            techGit[i].classList.add('active-star');
+            await sleep(300);
+
+        }
+
+
 
     }
 });
