@@ -236,15 +236,15 @@ body .btn:focus {
   /* animation: rotateperspective 3s infinite ease-in-out; */
 }
 
-.tech-bg .css-bg {
+.tech-bg .selenium-bg {
   animation: rotateperspective 3s infinite ease-in-out, bg-tech 10s infinite linear both;
 }
 
-.tech-bg .html-bg {
+.tech-bg .java-bg {
   animation: rotateperspective 3s 2s infinite ease-in-out, bg-tech 15s infinite reverse linear both;
 }
 
-.tech-bg .js-bg {
+.tech-bg .postman-bg {
   animation: rotateperspective 3s 2s infinite ease-in-out, bg-tech 10s infinite alternate linear both;
 }
 
